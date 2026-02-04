@@ -1,0 +1,212 @@
+/* ========== PROFILE PAGE ========== */
+.profile-container {
+  max-width: 1800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Profile Header */
+.profile-header {
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+  background: #fff8f5;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  border: 1px solid #e6d4c8;
+  justify-content: center;
+}
+
+.profile-info {
+  flex: 0 1 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: flex-start;
+}
+
+.profile-name {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #3d2817;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.profile-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tag {
+  background: #ede3db;
+  color: #5c3d28;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid #d9c9bd;
+}
+
+.profile-bio {
+  font-size: 1rem;
+  color: #5c4033;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.profile-pic-section {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.profile-pic {
+  width: 220px;
+  height: 280px;
+  object-fit: cover;
+  border: 1px solid #d9c9bd;
+  display: block;
+}
+
+/* Projects Section */
+.projects-section {
+  background: #fff8f5;
+  padding: 2.5rem 3rem;
+  margin-bottom: 2rem;
+  border: 1px solid #e6d4c8;
+}
+
+.projects-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #3d2817;
+  font-weight: 600;
+  border-bottom: 1px solid #d9c9bd;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.projects-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.project-item {
+  padding: 1.5rem;
+  background: #fdf6f1;
+  border-left: 3px solid #8b6f47;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #5c4033;
+}
+
+.project-item:hover {
+  background: #f5e6d3;
+  transform: translateX(4px);
+}
+
+.project-title {
+  font-weight: 600;
+  color: #3d2817;
+}
+
+/* Footer */
+.footer {
+  background: #4a3728;
+  color: #d4af85;
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid #6b5344;
+  margin-top: 2rem;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.footer a {
+  color: #d4af85;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #f5deb3;
+  text-decoration: underline;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-info {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .profile-name {
+    font-size: 1.8rem;
+  }
+
+  .profile-pic {
+    width: 180px;
+    height: 240px;
+  }
+
+  .profile-pic-section {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .projects-section {
+    padding: 1.5rem;
+  }
+
+  .projects-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .profile-tags {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-container {
+    padding: 0 0.5rem;
+  }
+
+  .profile-name {
+    font-size: 1.5rem;
+  }
+
+  .profile-header {
+    padding: 1.5rem;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 200px;
+  }
+
+  .tag {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
